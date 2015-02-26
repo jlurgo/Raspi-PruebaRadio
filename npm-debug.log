@@ -1,0 +1,1074 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'instal', 'nrf' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly cache add args [ 'nrf', null ]
+5 verbose cache add spec nrf
+6 silly cache add parsed spec { raw: 'nrf',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'nrf',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed nrf@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'nrf', range: '*', hasData: false }
+11 silly mapToRegistry name nrf
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/nrf
+15 verbose addNameRange registry:https://registry.npmjs.org/nrf not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/nrf
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 18:11:59
+19 verbose request id 90ad3059d9aa3376
+20 verbose etag "86U6KL8HQEFH940B3PDYYL06I"
+21 http request GET https://registry.npmjs.org/nrf
+22 http 304 https://registry.npmjs.org/nrf
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 26 Feb 2015 18:12:01 GMT',
+23 silly get     server: 'Apache',
+23 silly get     via: '1.1 varnish',
+23 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:01 GMT',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     etag: '"86U6KL8HQEFH940B3PDYYL06I"',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-iad2125-IAD',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1424974321.363500,VS0,VE23',
+23 silly get     vary: 'Accept',
+23 silly get     'content-length': '0',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose etag https://registry.npmjs.org/nrf from cache
+25 verbose get saving nrf to /home/pi/.npm/registry.npmjs.org/nrf/.cache.json
+26 silly addNameRange number 2 { name: 'nrf', range: '*', hasData: true }
+27 silly addNameRange versions [ 'nrf', [ '0.7.0', '0.8.0', '0.8.1', '0.8.2' ] ]
+28 verbose addNamed nrf@0.8.2
+29 silly addNamed semver.valid 0.8.2
+30 silly addNamed semver.validRange 0.8.2
+31 silly cache afterAdd nrf@0.8.2
+32 verbose afterAdd /home/pi/.npm/nrf/0.8.2/package/package.json not in flight; writing
+33 verbose afterAdd /home/pi/.npm/nrf/0.8.2/package/package.json written
+34 silly install resolved [ { name: 'nrf',
+34 silly install resolved     version: '0.8.2',
+34 silly install resolved     description: 'nRF24L01 driver library',
+34 silly install resolved     main: 'index.js',
+34 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+34 silly install resolved     repository: { type: 'git', url: 'git://github.com/natevw/node-nrf.git' },
+34 silly install resolved     keywords: [ 'nrf24l01', 'rf24', 'wireless', 'transceiver', 'raspi' ],
+34 silly install resolved     author: { name: 'Nathan Vander Wilt' },
+34 silly install resolved     license: 'BSD-2-Clause',
+34 silly install resolved     homepage: 'https://github.com/natevw/node-nrf',
+34 silly install resolved     bugs: { url: 'https://github.com/natevw/node-nrf/issues' },
+34 silly install resolved     dependencies:
+34 silly install resolved      { fifolock: '^1.0.0',
+34 silly install resolved        'pi-pins': '^1.0.0',
+34 silly install resolved        'pi-spi': '~0.8.1',
+34 silly install resolved        'queue-async': '~1.0.4' },
+34 silly install resolved     gitHead: '19a1b12effa5903ded1f49401b6eed21a9b4fb03',
+34 silly install resolved     _id: 'nrf@0.8.2',
+34 silly install resolved     _shasum: '12b09450a94060e88c8c692481807adc55dca210',
+34 silly install resolved     _from: 'nrf@*',
+34 silly install resolved     _npmVersion: '1.4.20',
+34 silly install resolved     _npmUser: { name: 'natevw', email: 'natevw@yahoo.com' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: '12b09450a94060e88c8c692481807adc55dca210',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/nrf/-/nrf-0.8.2.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/nrf/-/nrf-0.8.2.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install nrf@0.8.2 into /home/pi/apps/PruebaRF24
+36 info installOne nrf@0.8.2
+37 verbose installOne of nrf to /home/pi/apps/PruebaRF24 not in flight; installing
+38 verbose lock using /home/pi/.npm/_locks/nrf-1f10782e24be5cd7.lock for /home/pi/apps/PruebaRF24/node_modules/nrf
+39 silly install write writing nrf 0.8.2 to /home/pi/apps/PruebaRF24/node_modules/nrf
+40 silly cache addNamed cb nrf@0.8.2
+41 verbose unbuild node_modules/nrf
+42 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf
+43 verbose tar unpack /home/pi/.npm/nrf/0.8.2/package.tgz
+44 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf
+45 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry package.json
+48 silly gunzTarPerm extractEntry .npmignore
+49 silly gunzTarPerm extractEntry README.md
+50 silly gunzTarPerm extractEntry index.js
+51 silly gunzTarPerm extractEntry magicnums.js
+52 silly gunzTarPerm extractEntry test-details.js
+53 silly gunzTarPerm extractEntry test.js
+54 silly gunzTarPerm extractEntry test2.js
+55 info preinstall nrf@0.8.2
+56 silly prepareForInstallMany adding fifolock@^1.0.0 from nrf dependencies
+57 silly prepareForInstallMany adding pi-pins@^1.0.0 from nrf dependencies
+58 silly prepareForInstallMany adding pi-spi@~0.8.1 from nrf dependencies
+59 silly prepareForInstallMany adding queue-async@~1.0.4 from nrf dependencies
+60 silly cache add args [ 'queue-async@~1.0.4', null ]
+61 verbose cache add spec queue-async@~1.0.4
+62 silly cache add parsed spec { raw: 'queue-async@~1.0.4',
+62 silly cache add   scope: null,
+62 silly cache add   name: 'queue-async',
+62 silly cache add   rawSpec: '~1.0.4',
+62 silly cache add   spec: '>=1.0.4 <1.1.0',
+62 silly cache add   type: 'range' }
+63 verbose addNamed queue-async@>=1.0.4 <1.1.0
+64 silly addNamed semver.valid null
+65 silly addNamed semver.validRange >=1.0.4 <1.1.0
+66 silly addNameRange { name: 'queue-async', range: '>=1.0.4 <1.1.0', hasData: false }
+67 silly mapToRegistry name queue-async
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/queue-async
+71 verbose addNameRange registry:https://registry.npmjs.org/queue-async not in flight; fetching
+72 silly cache add args [ 'fifolock@^1.0.0', null ]
+73 verbose cache add spec fifolock@^1.0.0
+74 silly cache add parsed spec { raw: 'fifolock@^1.0.0',
+74 silly cache add   scope: null,
+74 silly cache add   name: 'fifolock',
+74 silly cache add   rawSpec: '^1.0.0',
+74 silly cache add   spec: '>=1.0.0 <2.0.0',
+74 silly cache add   type: 'range' }
+75 verbose addNamed fifolock@>=1.0.0 <2.0.0
+76 silly addNamed semver.valid null
+77 silly addNamed semver.validRange >=1.0.0 <2.0.0
+78 silly addNameRange { name: 'fifolock', range: '>=1.0.0 <2.0.0', hasData: false }
+79 silly mapToRegistry name fifolock
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/fifolock
+83 verbose addNameRange registry:https://registry.npmjs.org/fifolock not in flight; fetching
+84 silly cache add args [ 'pi-pins@^1.0.0', null ]
+85 verbose cache add spec pi-pins@^1.0.0
+86 silly cache add parsed spec { raw: 'pi-pins@^1.0.0',
+86 silly cache add   scope: null,
+86 silly cache add   name: 'pi-pins',
+86 silly cache add   rawSpec: '^1.0.0',
+86 silly cache add   spec: '>=1.0.0 <2.0.0',
+86 silly cache add   type: 'range' }
+87 verbose addNamed pi-pins@>=1.0.0 <2.0.0
+88 silly addNamed semver.valid null
+89 silly addNamed semver.validRange >=1.0.0 <2.0.0
+90 silly addNameRange { name: 'pi-pins', range: '>=1.0.0 <2.0.0', hasData: false }
+91 silly mapToRegistry name pi-pins
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry uri https://registry.npmjs.org/pi-pins
+95 verbose addNameRange registry:https://registry.npmjs.org/pi-pins not in flight; fetching
+96 silly cache add args [ 'pi-spi@~0.8.1', null ]
+97 verbose cache add spec pi-spi@~0.8.1
+98 silly cache add parsed spec { raw: 'pi-spi@~0.8.1',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'pi-spi',
+98 silly cache add   rawSpec: '~0.8.1',
+98 silly cache add   spec: '>=0.8.1 <0.9.0',
+98 silly cache add   type: 'range' }
+99 verbose addNamed pi-spi@>=0.8.1 <0.9.0
+100 silly addNamed semver.valid null
+101 silly addNamed semver.validRange >=0.8.1 <0.9.0
+102 silly addNameRange { name: 'pi-spi', range: '>=0.8.1 <0.9.0', hasData: false }
+103 silly mapToRegistry name pi-spi
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry uri https://registry.npmjs.org/pi-spi
+107 verbose addNameRange registry:https://registry.npmjs.org/pi-spi not in flight; fetching
+108 verbose request uri https://registry.npmjs.org/queue-async
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 18:12:04
+111 verbose etag "4DOFT1G8SMV4LM37GKQV266PA"
+112 http request GET https://registry.npmjs.org/queue-async
+113 verbose request uri https://registry.npmjs.org/fifolock
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 18:12:04
+116 verbose etag "9JZWPH3N93D30T3ETXN2681JX"
+117 http request GET https://registry.npmjs.org/fifolock
+118 verbose request uri https://registry.npmjs.org/pi-pins
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 18:12:04
+121 verbose etag "DSQS5UDZYUX1FD12CMK2BUEBE"
+122 http request GET https://registry.npmjs.org/pi-pins
+123 verbose request uri https://registry.npmjs.org/pi-spi
+124 verbose request no auth needed
+125 info attempt registry request try #1 at 18:12:04
+126 verbose etag "BP7BFBIATL3NW4YQG3L06YGDX"
+127 http request GET https://registry.npmjs.org/pi-spi
+128 http 304 https://registry.npmjs.org/pi-pins
+129 silly get cb [ 304,
+129 silly get   { date: 'Thu, 26 Feb 2015 18:12:05 GMT',
+129 silly get     server: 'Apache',
+129 silly get     via: '1.1 varnish',
+129 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:05 GMT',
+129 silly get     'cache-control': 'max-age=60',
+129 silly get     etag: '"DSQS5UDZYUX1FD12CMK2BUEBE"',
+129 silly get     age: '0',
+129 silly get     'x-served-by': 'cache-iad2139-IAD',
+129 silly get     'x-cache': 'MISS',
+129 silly get     'x-cache-hits': '0',
+129 silly get     'x-timer': 'S1424974325.330585,VS0,VE52',
+129 silly get     vary: 'Accept',
+129 silly get     'content-length': '0',
+129 silly get     'keep-alive': 'timeout=10, max=50',
+129 silly get     connection: 'Keep-Alive' } ]
+130 verbose etag https://registry.npmjs.org/pi-pins from cache
+131 verbose get saving pi-pins to /home/pi/.npm/registry.npmjs.org/pi-pins/.cache.json
+132 http 304 https://registry.npmjs.org/fifolock
+133 silly get cb [ 304,
+133 silly get   { date: 'Thu, 26 Feb 2015 18:12:05 GMT',
+133 silly get     server: 'Apache',
+133 silly get     via: '1.1 varnish',
+133 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:05 GMT',
+133 silly get     'cache-control': 'max-age=60',
+133 silly get     etag: '"9JZWPH3N93D30T3ETXN2681JX"',
+133 silly get     age: '0',
+133 silly get     'x-served-by': 'cache-iad2136-IAD',
+133 silly get     'x-cache': 'MISS',
+133 silly get     'x-cache-hits': '0',
+133 silly get     'x-timer': 'S1424974325.366738,VS0,VE13',
+133 silly get     vary: 'Accept',
+133 silly get     'content-length': '0',
+133 silly get     'keep-alive': 'timeout=10, max=50',
+133 silly get     connection: 'Keep-Alive' } ]
+134 verbose etag https://registry.npmjs.org/fifolock from cache
+135 verbose get saving fifolock to /home/pi/.npm/registry.npmjs.org/fifolock/.cache.json
+136 http 304 https://registry.npmjs.org/pi-spi
+137 silly get cb [ 304,
+137 silly get   { date: 'Thu, 26 Feb 2015 18:12:05 GMT',
+137 silly get     server: 'Apache',
+137 silly get     via: '1.1 varnish',
+137 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:05 GMT',
+137 silly get     'cache-control': 'max-age=60',
+137 silly get     etag: '"BP7BFBIATL3NW4YQG3L06YGDX"',
+137 silly get     age: '0',
+137 silly get     'x-served-by': 'cache-iad2129-IAD',
+137 silly get     'x-cache': 'MISS',
+137 silly get     'x-cache-hits': '0',
+137 silly get     'x-timer': 'S1424974325.468140,VS0,VE15',
+137 silly get     vary: 'Accept',
+137 silly get     'content-length': '0',
+137 silly get     'keep-alive': 'timeout=10, max=50',
+137 silly get     connection: 'Keep-Alive' } ]
+138 verbose etag https://registry.npmjs.org/pi-spi from cache
+139 verbose get saving pi-spi to /home/pi/.npm/registry.npmjs.org/pi-spi/.cache.json
+140 silly addNameRange number 2 { name: 'pi-pins', range: '>=1.0.0 <2.0.0', hasData: true }
+141 silly addNameRange versions [ 'pi-pins', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+142 verbose addNamed pi-pins@1.0.2
+143 silly addNamed semver.valid 1.0.2
+144 silly addNamed semver.validRange 1.0.2
+145 silly addNameRange number 2 { name: 'fifolock', range: '>=1.0.0 <2.0.0', hasData: true }
+146 silly addNameRange versions [ 'fifolock', [ '1.0.0' ] ]
+147 verbose addNamed fifolock@1.0.0
+148 silly addNamed semver.valid 1.0.0
+149 silly addNamed semver.validRange 1.0.0
+150 silly addNameRange number 2 { name: 'pi-spi', range: '>=0.8.1 <0.9.0', hasData: true }
+151 silly addNameRange versions [ 'pi-spi',
+151 silly addNameRange   [ '0.8.0', '0.8.1', '0.8.5', '0.8.6', '0.8.7', '1.0.0' ] ]
+152 verbose addNamed pi-spi@0.8.7
+153 silly addNamed semver.valid 0.8.7
+154 silly addNamed semver.validRange 0.8.7
+155 silly cache afterAdd pi-pins@1.0.2
+156 verbose afterAdd /home/pi/.npm/pi-pins/1.0.2/package/package.json not in flight; writing
+157 silly cache afterAdd fifolock@1.0.0
+158 verbose afterAdd /home/pi/.npm/fifolock/1.0.0/package/package.json not in flight; writing
+159 silly cache afterAdd pi-spi@0.8.7
+160 verbose afterAdd /home/pi/.npm/pi-spi/0.8.7/package/package.json not in flight; writing
+161 http 304 https://registry.npmjs.org/queue-async
+162 silly get cb [ 304,
+162 silly get   { date: 'Thu, 26 Feb 2015 18:12:05 GMT',
+162 silly get     server: 'Apache',
+162 silly get     via: '1.1 varnish',
+162 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:05 GMT',
+162 silly get     'cache-control': 'max-age=60',
+162 silly get     etag: '"4DOFT1G8SMV4LM37GKQV266PA"',
+162 silly get     age: '0',
+162 silly get     'x-served-by': 'cache-iad2144-IAD',
+162 silly get     'x-cache': 'HIT',
+162 silly get     'x-cache-hits': '1',
+162 silly get     'x-timer': 'S1424974325.581400,VS0,VE17',
+162 silly get     vary: 'Accept',
+162 silly get     'content-length': '0',
+162 silly get     'keep-alive': 'timeout=10, max=50',
+162 silly get     connection: 'Keep-Alive' } ]
+163 verbose etag https://registry.npmjs.org/queue-async from cache
+164 verbose get saving queue-async to /home/pi/.npm/registry.npmjs.org/queue-async/.cache.json
+165 verbose afterAdd /home/pi/.npm/pi-pins/1.0.2/package/package.json written
+166 verbose afterAdd /home/pi/.npm/fifolock/1.0.0/package/package.json written
+167 verbose afterAdd /home/pi/.npm/pi-spi/0.8.7/package/package.json written
+168 silly addNameRange number 2 { name: 'queue-async', range: '>=1.0.4 <1.1.0', hasData: true }
+169 silly addNameRange versions [ 'queue-async',
+169 silly addNameRange   [ '0.0.2',
+169 silly addNameRange     '1.0.0',
+169 silly addNameRange     '1.0.1',
+169 silly addNameRange     '1.0.2',
+169 silly addNameRange     '1.0.3',
+169 silly addNameRange     '1.0.4',
+169 silly addNameRange     '1.0.5',
+169 silly addNameRange     '1.0.6',
+169 silly addNameRange     '1.0.7' ] ]
+170 verbose addNamed queue-async@1.0.7
+171 silly addNamed semver.valid 1.0.7
+172 silly addNamed semver.validRange 1.0.7
+173 silly cache afterAdd queue-async@1.0.7
+174 verbose afterAdd /home/pi/.npm/queue-async/1.0.7/package/package.json not in flight; writing
+175 verbose afterAdd /home/pi/.npm/queue-async/1.0.7/package/package.json written
+176 silly install resolved [ { name: 'pi-pins',
+176 silly install resolved     version: '1.0.2',
+176 silly install resolved     description: 'GPIO (with interrupts) for embedded Linux machines like Raspberry Pi and BeagleBone',
+176 silly install resolved     main: 'index.js',
+176 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+176 silly install resolved     repository: { type: 'git', url: 'https://github.com/natevw/pi-pins.git' },
+176 silly install resolved     keywords: [ 'gpio', 'raspi' ],
+176 silly install resolved     author: { name: 'Nathan Vander Wilt' },
+176 silly install resolved     license: 'ISC',
+176 silly install resolved     bugs: { url: 'https://github.com/natevw/pi-pins/issues' },
+176 silly install resolved     homepage: 'https://github.com/natevw/pi-pins',
+176 silly install resolved     dependencies: { epoll: '^0.1.3' },
+176 silly install resolved     _id: 'pi-pins@1.0.2',
+176 silly install resolved     dist:
+176 silly install resolved      { shasum: '653ccc0bbc6347c7aa24db8a7fe54ec30a851fa6',
+176 silly install resolved        tarball: 'http://registry.npmjs.org/pi-pins/-/pi-pins-1.0.2.tgz' },
+176 silly install resolved     _from: 'pi-pins@>=1.0.0 <2.0.0',
+176 silly install resolved     _npmVersion: '1.4.3',
+176 silly install resolved     _npmUser: { name: 'natevw', email: 'natevw@yahoo.com' },
+176 silly install resolved     maintainers: [ [Object] ],
+176 silly install resolved     directories: {},
+176 silly install resolved     _shasum: '653ccc0bbc6347c7aa24db8a7fe54ec30a851fa6',
+176 silly install resolved     _resolved: 'https://registry.npmjs.org/pi-pins/-/pi-pins-1.0.2.tgz',
+176 silly install resolved     readme: 'ERROR: No README data found!' },
+176 silly install resolved   { name: 'fifolock',
+176 silly install resolved     version: '1.0.0',
+176 silly install resolved     description: 'Not-quite-barebones serial queue / lock.',
+176 silly install resolved     main: 'index.js',
+176 silly install resolved     scripts: { test: 'node test' },
+176 silly install resolved     repository: { type: 'git', url: 'https://github.com/natevw/fifolock' },
+176 silly install resolved     keywords: [ 'lock', 'queue' ],
+176 silly install resolved     author: { name: 'Nathan Vander Wilt' },
+176 silly install resolved     license: 'BSD-2-Clause',
+176 silly install resolved     bugs: { url: 'https://github.com/natevw/fifolock/issues' },
+176 silly install resolved     homepage: 'https://github.com/natevw/fifolock',
+176 silly install resolved     _id: 'fifolock@1.0.0',
+176 silly install resolved     dist:
+176 silly install resolved      { shasum: 'a37e54f3ebe69d13480d95a82abc42b7a5c1792d',
+176 silly install resolved        tarball: 'http://registry.npmjs.org/fifolock/-/fifolock-1.0.0.tgz' },
+176 silly install resolved     _from: 'fifolock@>=1.0.0 <2.0.0',
+176 silly install resolved     _npmVersion: '1.4.3',
+176 silly install resolved     _npmUser: { name: 'natevw', email: 'natevw@yahoo.com' },
+176 silly install resolved     maintainers: [ [Object] ],
+176 silly install resolved     directories: {},
+176 silly install resolved     _shasum: 'a37e54f3ebe69d13480d95a82abc42b7a5c1792d',
+176 silly install resolved     _resolved: 'https://registry.npmjs.org/fifolock/-/fifolock-1.0.0.tgz',
+176 silly install resolved     readme: 'ERROR: No README data found!' },
+176 silly install resolved   { name: 'pi-spi',
+176 silly install resolved     version: '0.8.7',
+176 silly install resolved     description: 'Simple async SPI library for Raspberry Pi',
+176 silly install resolved     main: 'index.js',
+176 silly install resolved     scripts: { test: 'node test', install: 'node-gyp rebuild' },
+176 silly install resolved     repository: { type: 'git', url: 'git://github.com/natevw/pi-spi.git' },
+176 silly install resolved     keywords: [ 'raspi', 'spi' ],
+176 silly install resolved     author: { name: 'Nathan Vander Wilt' },
+176 silly install resolved     license: 'BSD-2-Clause',
+176 silly install resolved     bugs: { url: 'https://github.com/natevw/pi-spi/issues' },
+176 silly install resolved     gypfile: true,
+176 silly install resolved     homepage: 'https://github.com/natevw/pi-spi',
+176 silly install resolved     _id: 'pi-spi@0.8.7',
+176 silly install resolved     dist:
+176 silly install resolved      { shasum: '4a9e2c88c2b77af3e657050c0f4f753df4e456dd',
+176 silly install resolved        tarball: 'http://registry.npmjs.org/pi-spi/-/pi-spi-0.8.7.tgz' },
+176 silly install resolved     _from: 'pi-spi@>=0.8.1 <0.9.0',
+176 silly install resolved     _npmVersion: '1.4.3',
+176 silly install resolved     _npmUser: { name: 'natevw', email: 'natevw@yahoo.com' },
+176 silly install resolved     maintainers: [ [Object] ],
+176 silly install resolved     directories: {},
+176 silly install resolved     _shasum: '4a9e2c88c2b77af3e657050c0f4f753df4e456dd',
+176 silly install resolved     _resolved: 'https://registry.npmjs.org/pi-spi/-/pi-spi-0.8.7.tgz',
+176 silly install resolved     readme: 'ERROR: No README data found!' },
+176 silly install resolved   { name: 'queue-async',
+176 silly install resolved     version: '1.0.7',
+176 silly install resolved     description: 'A little helper for asynchronous JavaScript.',
+176 silly install resolved     keywords: [ 'asynchronous', 'async', 'queue' ],
+176 silly install resolved     author: { name: 'Mike Bostock', url: 'http://bost.ocks.org/mike' },
+176 silly install resolved     repository: { type: 'git', url: 'https://github.com/mbostock/queue.git' },
+176 silly install resolved     main: 'queue.js',
+176 silly install resolved     devDependencies: { 'uglify-js': '2', vows: '0.7' },
+176 silly install resolved     scripts: { test: 'vows; echo' },
+176 silly install resolved     bugs: { url: 'https://github.com/mbostock/queue/issues' },
+176 silly install resolved     _id: 'queue-async@1.0.7',
+176 silly install resolved     dist:
+176 silly install resolved      { shasum: '22ae0a1dac4a92f5bcd4634f993c682a2a810945',
+176 silly install resolved        tarball: 'http://registry.npmjs.org/queue-async/-/queue-async-1.0.7.tgz' },
+176 silly install resolved     _from: 'queue-async@>=1.0.4 <1.1.0',
+176 silly install resolved     _npmVersion: '1.3.11',
+176 silly install resolved     _npmUser: { name: 'mbostock', email: 'mbostock@gmail.com' },
+176 silly install resolved     maintainers: [ [Object] ],
+176 silly install resolved     directories: {},
+176 silly install resolved     _shasum: '22ae0a1dac4a92f5bcd4634f993c682a2a810945',
+176 silly install resolved     _resolved: 'https://registry.npmjs.org/queue-async/-/queue-async-1.0.7.tgz',
+176 silly install resolved     readme: 'ERROR: No README data found!',
+176 silly install resolved     homepage: 'https://github.com/mbostock/queue' } ]
+177 info install pi-pins@1.0.2 into /home/pi/apps/PruebaRF24/node_modules/nrf
+178 info install fifolock@1.0.0 into /home/pi/apps/PruebaRF24/node_modules/nrf
+179 info install pi-spi@0.8.7 into /home/pi/apps/PruebaRF24/node_modules/nrf
+180 info install queue-async@1.0.7 into /home/pi/apps/PruebaRF24/node_modules/nrf
+181 info installOne pi-pins@1.0.2
+182 verbose installOne of pi-pins to /home/pi/apps/PruebaRF24/node_modules/nrf not in flight; installing
+183 info installOne fifolock@1.0.0
+184 verbose installOne of fifolock to /home/pi/apps/PruebaRF24/node_modules/nrf not in flight; installing
+185 info installOne pi-spi@0.8.7
+186 verbose installOne of pi-spi to /home/pi/apps/PruebaRF24/node_modules/nrf not in flight; installing
+187 info installOne queue-async@1.0.7
+188 verbose installOne of queue-async to /home/pi/apps/PruebaRF24/node_modules/nrf not in flight; installing
+189 verbose lock using /home/pi/.npm/_locks/pi-pins-ab1c79b541182627.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+190 verbose lock using /home/pi/.npm/_locks/fifolock-ec3a8fae353962d0.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+191 verbose lock using /home/pi/.npm/_locks/pi-spi-6dc5311cdfa95b73.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+192 verbose lock using /home/pi/.npm/_locks/queue-async-29b081389be92ec0.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+193 silly install write writing pi-pins 1.0.2 to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+194 silly cache addNamed cb pi-pins@1.0.2
+195 verbose unbuild node_modules/nrf/node_modules/pi-pins
+196 silly install write writing fifolock 1.0.0 to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+197 silly cache addNamed cb fifolock@1.0.0
+198 verbose unbuild node_modules/nrf/node_modules/fifolock
+199 silly install write writing pi-spi 0.8.7 to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+200 silly cache addNamed cb pi-spi@0.8.7
+201 verbose unbuild node_modules/nrf/node_modules/pi-spi
+202 silly install write writing queue-async 1.0.7 to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+203 silly cache addNamed cb queue-async@1.0.7
+204 verbose unbuild node_modules/nrf/node_modules/queue-async
+205 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+206 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+207 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+208 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+209 verbose tar unpack /home/pi/.npm/pi-pins/1.0.2/package.tgz
+210 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+211 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+212 verbose tar unpack /home/pi/.npm/fifolock/1.0.0/package.tgz
+213 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+214 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+215 verbose tar unpack /home/pi/.npm/pi-spi/0.8.7/package.tgz
+216 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+217 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+218 verbose tar unpack /home/pi/.npm/queue-async/1.0.7/package.tgz
+219 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+220 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+221 silly gunzTarPerm modes [ '755', '644' ]
+222 silly gunzTarPerm modes [ '755', '644' ]
+223 silly gunzTarPerm modes [ '755', '644' ]
+224 silly gunzTarPerm modes [ '755', '644' ]
+225 silly gunzTarPerm extractEntry package.json
+226 silly gunzTarPerm extractEntry package.json
+227 silly gunzTarPerm extractEntry package.json
+228 silly gunzTarPerm extractEntry package.json
+229 silly gunzTarPerm extractEntry .npmignore
+230 silly gunzTarPerm extractEntry README.md
+231 silly gunzTarPerm extractEntry README.md
+232 silly gunzTarPerm extractEntry index.js
+233 silly gunzTarPerm extractEntry .npmignore
+234 silly gunzTarPerm extractEntry README.md
+235 silly gunzTarPerm extractEntry .npmignore
+236 silly gunzTarPerm extractEntry README.md
+237 silly gunzTarPerm extractEntry index.js
+238 silly gunzTarPerm extractEntry test.js
+239 silly gunzTarPerm extractEntry examples/custom_wrapper.js
+240 silly gunzTarPerm extractEntry index.js
+241 silly gunzTarPerm extractEntry test.js
+242 silly gunzTarPerm extractEntry LICENSE
+243 silly gunzTarPerm extractEntry queue.js
+244 silly gunzTarPerm extractEntry binding.gyp
+245 silly gunzTarPerm extractEntry spi_binding.cc
+246 silly gunzTarPerm extractEntry queue.min.js
+247 silly gunzTarPerm extractEntry Makefile
+248 silly gunzTarPerm extractEntry examples/from_readme.js
+249 silly gunzTarPerm extractEntry component.json
+250 silly gunzTarPerm extractEntry src/component.js
+251 silly gunzTarPerm extractEntry src/package.js
+252 info preinstall pi-pins@1.0.2
+253 silly prepareForInstallMany adding epoll@^0.1.3 from pi-pins dependencies
+254 silly cache add args [ 'epoll@^0.1.3', null ]
+255 verbose cache add spec epoll@^0.1.3
+256 silly cache add parsed spec { raw: 'epoll@^0.1.3',
+256 silly cache add   scope: null,
+256 silly cache add   name: 'epoll',
+256 silly cache add   rawSpec: '^0.1.3',
+256 silly cache add   spec: '>=0.1.3 <0.2.0',
+256 silly cache add   type: 'range' }
+257 verbose addNamed epoll@>=0.1.3 <0.2.0
+258 silly addNamed semver.valid null
+259 silly addNamed semver.validRange >=0.1.3 <0.2.0
+260 silly addNameRange { name: 'epoll', range: '>=0.1.3 <0.2.0', hasData: false }
+261 silly mapToRegistry name epoll
+262 silly mapToRegistry using default registry
+263 silly mapToRegistry registry https://registry.npmjs.org/
+264 silly mapToRegistry uri https://registry.npmjs.org/epoll
+265 verbose addNameRange registry:https://registry.npmjs.org/epoll not in flight; fetching
+266 verbose request uri https://registry.npmjs.org/epoll
+267 verbose request no auth needed
+268 info attempt registry request try #1 at 18:12:08
+269 verbose etag "A3DT4BLFDXTSQGIQY2GSA3MNU"
+270 http request GET https://registry.npmjs.org/epoll
+271 info preinstall fifolock@1.0.0
+272 silly install resolved []
+273 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+274 info build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+275 verbose linkStuff [ false,
+275 verbose linkStuff   false,
+275 verbose linkStuff   false,
+275 verbose linkStuff   '/home/pi/apps/PruebaRF24/node_modules/nrf/node_modules' ]
+276 info linkStuff fifolock@1.0.0
+277 verbose linkBins fifolock@1.0.0
+278 verbose linkMans fifolock@1.0.0
+279 verbose rebuildBundles fifolock@1.0.0
+280 info install fifolock@1.0.0
+281 info postinstall fifolock@1.0.0
+282 info preinstall pi-spi@0.8.7
+283 verbose unlock done using /home/pi/.npm/_locks/fifolock-ec3a8fae353962d0.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/fifolock
+284 silly install resolved []
+285 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+286 info build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+287 verbose linkStuff [ false,
+287 verbose linkStuff   false,
+287 verbose linkStuff   false,
+287 verbose linkStuff   '/home/pi/apps/PruebaRF24/node_modules/nrf/node_modules' ]
+288 info linkStuff pi-spi@0.8.7
+289 verbose linkBins pi-spi@0.8.7
+290 verbose linkMans pi-spi@0.8.7
+291 verbose rebuildBundles pi-spi@0.8.7
+292 info install pi-spi@0.8.7
+293 verbose unsafe-perm in lifecycle true
+294 info preinstall queue-async@1.0.7
+295 silly install resolved []
+296 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+297 info build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+298 verbose linkStuff [ false,
+298 verbose linkStuff   false,
+298 verbose linkStuff   false,
+298 verbose linkStuff   '/home/pi/apps/PruebaRF24/node_modules/nrf/node_modules' ]
+299 info linkStuff queue-async@1.0.7
+300 verbose linkBins queue-async@1.0.7
+301 verbose linkMans queue-async@1.0.7
+302 verbose rebuildBundles queue-async@1.0.7
+303 info install queue-async@1.0.7
+304 info postinstall queue-async@1.0.7
+305 verbose unlock done using /home/pi/.npm/_locks/queue-async-29b081389be92ec0.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/queue-async
+306 http 304 https://registry.npmjs.org/epoll
+307 silly get cb [ 304,
+307 silly get   { date: 'Thu, 26 Feb 2015 18:12:09 GMT',
+307 silly get     server: 'Apache',
+307 silly get     via: '1.1 varnish',
+307 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:09 GMT',
+307 silly get     'cache-control': 'max-age=60',
+307 silly get     etag: '"A3DT4BLFDXTSQGIQY2GSA3MNU"',
+307 silly get     age: '0',
+307 silly get     'x-served-by': 'cache-iad2143-IAD',
+307 silly get     'x-cache': 'MISS',
+307 silly get     'x-cache-hits': '0',
+307 silly get     'x-timer': 'S1424974329.410662,VS0,VE351',
+307 silly get     vary: 'Accept',
+307 silly get     'content-length': '0',
+307 silly get     'keep-alive': 'timeout=10, max=50',
+307 silly get     connection: 'Keep-Alive' } ]
+308 verbose etag https://registry.npmjs.org/epoll from cache
+309 verbose get saving epoll to /home/pi/.npm/registry.npmjs.org/epoll/.cache.json
+310 silly addNameRange number 2 { name: 'epoll', range: '>=0.1.3 <0.2.0', hasData: true }
+311 silly addNameRange versions [ 'epoll',
+311 silly addNameRange   [ '0.0.1',
+311 silly addNameRange     '0.0.2',
+311 silly addNameRange     '0.0.3',
+311 silly addNameRange     '0.0.4',
+311 silly addNameRange     '0.0.5',
+311 silly addNameRange     '0.0.6',
+311 silly addNameRange     '0.0.7',
+311 silly addNameRange     '0.0.8',
+311 silly addNameRange     '0.1.0',
+311 silly addNameRange     '0.1.1',
+311 silly addNameRange     '0.1.2',
+311 silly addNameRange     '0.1.3',
+311 silly addNameRange     '0.1.4',
+311 silly addNameRange     '0.1.5',
+311 silly addNameRange     '0.1.7',
+311 silly addNameRange     '0.1.8',
+311 silly addNameRange     '0.1.9',
+311 silly addNameRange     '0.1.10',
+311 silly addNameRange     '0.1.11',
+311 silly addNameRange     '0.1.12' ] ]
+312 verbose addNamed epoll@0.1.12
+313 silly addNamed semver.valid 0.1.12
+314 silly addNamed semver.validRange 0.1.12
+315 silly cache afterAdd epoll@0.1.12
+316 verbose afterAdd /home/pi/.npm/epoll/0.1.12/package/package.json not in flight; writing
+317 verbose afterAdd /home/pi/.npm/epoll/0.1.12/package/package.json written
+318 silly install resolved [ { name: 'epoll',
+318 silly install resolved     version: '0.1.12',
+318 silly install resolved     description: 'A low-level Node.js binding for the Linux epoll API',
+318 silly install resolved     main: 'epoll.js',
+318 silly install resolved     directories: { example: 'example', test: 'test' },
+318 silly install resolved     scripts:
+318 silly install resolved      { test: 'echo "Tests can only be run manually from the command line." && exit 1',
+318 silly install resolved        install: 'node-gyp rebuild' },
+318 silly install resolved     repository: { type: 'git', url: 'https://github.com/fivdi/epoll.git' },
+318 silly install resolved     engines: { node: '>=0.8.0' },
+318 silly install resolved     dependencies: { bindings: '~1.2.1', nan: '~1.6.2' },
+318 silly install resolved     keywords:
+318 silly install resolved      [ 'epoll',
+318 silly install resolved        'epollpri',
+318 silly install resolved        'poll',
+318 silly install resolved        'pollpri',
+318 silly install resolved        'gpio',
+318 silly install resolved        'interrupt',
+318 silly install resolved        'linux' ],
+318 silly install resolved     author: { name: 'fivdi' },
+318 silly install resolved     license: 'MIT',
+318 silly install resolved     gypfile: true,
+318 silly install resolved     gitHead: '33b3cfb2fddde00bc0043d1e241555f25f9ee3a5',
+318 silly install resolved     bugs: { url: 'https://github.com/fivdi/epoll/issues' },
+318 silly install resolved     homepage: 'https://github.com/fivdi/epoll',
+318 silly install resolved     _id: 'epoll@0.1.12',
+318 silly install resolved     _shasum: '9f90e60be0a7635255b22b0ba4f6f6e2e80bc43c',
+318 silly install resolved     _from: 'epoll@>=0.1.3 <0.2.0',
+318 silly install resolved     _npmVersion: '2.1.18',
+318 silly install resolved     _nodeVersion: '1.0.2',
+318 silly install resolved     _npmUser: { name: 'fivdi', email: 'fivdiweb@gmail.com' },
+318 silly install resolved     maintainers: [ [Object] ],
+318 silly install resolved     dist:
+318 silly install resolved      { shasum: '9f90e60be0a7635255b22b0ba4f6f6e2e80bc43c',
+318 silly install resolved        tarball: 'http://registry.npmjs.org/epoll/-/epoll-0.1.12.tgz' },
+318 silly install resolved     _resolved: 'https://registry.npmjs.org/epoll/-/epoll-0.1.12.tgz',
+318 silly install resolved     readme: 'ERROR: No README data found!' } ]
+319 info install epoll@0.1.12 into /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+320 info installOne epoll@0.1.12
+321 verbose installOne of epoll to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins not in flight; installing
+322 verbose lock using /home/pi/.npm/_locks/epoll-2f30bdc81a429eea.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+323 silly install write writing epoll 0.1.12 to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+324 silly cache addNamed cb epoll@0.1.12
+325 verbose unbuild node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+326 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+327 verbose tar unpack /home/pi/.npm/epoll/0.1.12/package.tgz
+328 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+329 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+330 silly gunzTarPerm modes [ '755', '644' ]
+331 silly gunzTarPerm extractEntry package.json
+332 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+333 silly gunzTarPerm extractEntry .npmignore
+334 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+335 silly gunzTarPerm extractEntry README.md
+336 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+337 silly gunzTarPerm extractEntry LICENSE
+338 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+339 silly gunzTarPerm extractEntry epoll.js
+340 silly gunzTarPerm extractEntry History.md
+341 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+342 silly gunzTarPerm extractEntry test/brute-force-leak-check.js
+343 silly gunzTarPerm modified mode [ 'test/brute-force-leak-check.js', 436, 420 ]
+344 silly gunzTarPerm extractEntry test/do-almost-nothing.js
+345 silly gunzTarPerm modified mode [ 'test/do-almost-nothing.js', 436, 420 ]
+346 silly gunzTarPerm extractEntry test/do-nothing.js
+347 silly gunzTarPerm modified mode [ 'test/do-nothing.js', 436, 420 ]
+348 silly gunzTarPerm extractEntry test/no-gc-allowed.js
+349 silly gunzTarPerm modified mode [ 'test/no-gc-allowed.js', 436, 420 ]
+350 silly gunzTarPerm extractEntry test/closed.js
+351 silly gunzTarPerm modified mode [ 'test/closed.js', 436, 420 ]
+352 silly gunzTarPerm extractEntry test/performance-check.js
+353 silly gunzTarPerm modified mode [ 'test/performance-check.js', 436, 420 ]
+354 silly gunzTarPerm extractEntry test/util.js
+355 silly gunzTarPerm modified mode [ 'test/util.js', 436, 420 ]
+356 silly gunzTarPerm extractEntry test/two-shot.js
+357 silly gunzTarPerm modified mode [ 'test/two-shot.js', 436, 420 ]
+358 silly gunzTarPerm extractEntry test/verify-events.js
+359 silly gunzTarPerm modified mode [ 'test/verify-events.js', 436, 420 ]
+360 silly gunzTarPerm extractEntry test/one-shot.js
+361 silly gunzTarPerm modified mode [ 'test/one-shot.js', 436, 420 ]
+362 silly gunzTarPerm extractEntry test/run-tests
+363 silly gunzTarPerm modified mode [ 'test/run-tests', 508, 492 ]
+364 silly gunzTarPerm extractEntry example/interrupts-per-second/interrupts-per-second.js
+365 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/interrupts-per-second.js',
+365 silly gunzTarPerm   436,
+365 silly gunzTarPerm   420 ]
+366 silly gunzTarPerm extractEntry example/interrupts-per-second/export
+367 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/export', 508, 492 ]
+368 silly gunzTarPerm extractEntry example/interrupts-per-second/unexport
+369 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/unexport', 508, 492 ]
+370 silly gunzTarPerm extractEntry example/watch-button/watch-button.js
+371 silly gunzTarPerm modified mode [ 'example/watch-button/watch-button.js', 436, 420 ]
+372 silly gunzTarPerm extractEntry example/watch-button/export
+373 silly gunzTarPerm modified mode [ 'example/watch-button/export', 508, 492 ]
+374 silly gunzTarPerm extractEntry example/watch-button/unexport
+375 silly gunzTarPerm modified mode [ 'example/watch-button/unexport', 508, 492 ]
+376 silly gunzTarPerm extractEntry History.md~
+377 silly gunzTarPerm modified mode [ 'History.md~', 436, 420 ]
+378 silly gunzTarPerm extractEntry src/epoll.cc
+379 silly gunzTarPerm modified mode [ 'src/epoll.cc', 436, 420 ]
+380 silly gunzTarPerm extractEntry src/epoll.h
+381 silly gunzTarPerm modified mode [ 'src/epoll.h', 436, 420 ]
+382 silly gunzTarPerm extractEntry binding.gyp
+383 info preinstall epoll@0.1.12
+384 silly prepareForInstallMany adding bindings@~1.2.1 from epoll dependencies
+385 silly prepareForInstallMany adding nan@~1.6.2 from epoll dependencies
+386 silly cache add args [ 'bindings@~1.2.1', null ]
+387 verbose cache add spec bindings@~1.2.1
+388 silly cache add parsed spec { raw: 'bindings@~1.2.1',
+388 silly cache add   scope: null,
+388 silly cache add   name: 'bindings',
+388 silly cache add   rawSpec: '~1.2.1',
+388 silly cache add   spec: '>=1.2.1 <1.3.0',
+388 silly cache add   type: 'range' }
+389 verbose addNamed bindings@>=1.2.1 <1.3.0
+390 silly addNamed semver.valid null
+391 silly addNamed semver.validRange >=1.2.1 <1.3.0
+392 silly addNameRange { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: false }
+393 silly mapToRegistry name bindings
+394 silly mapToRegistry using default registry
+395 silly mapToRegistry registry https://registry.npmjs.org/
+396 silly mapToRegistry uri https://registry.npmjs.org/bindings
+397 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+398 silly cache add args [ 'nan@~1.6.2', null ]
+399 verbose cache add spec nan@~1.6.2
+400 silly cache add parsed spec { raw: 'nan@~1.6.2',
+400 silly cache add   scope: null,
+400 silly cache add   name: 'nan',
+400 silly cache add   rawSpec: '~1.6.2',
+400 silly cache add   spec: '>=1.6.2 <1.7.0',
+400 silly cache add   type: 'range' }
+401 verbose addNamed nan@>=1.6.2 <1.7.0
+402 silly addNamed semver.valid null
+403 silly addNamed semver.validRange >=1.6.2 <1.7.0
+404 silly addNameRange { name: 'nan', range: '>=1.6.2 <1.7.0', hasData: false }
+405 silly mapToRegistry name nan
+406 silly mapToRegistry using default registry
+407 silly mapToRegistry registry https://registry.npmjs.org/
+408 silly mapToRegistry uri https://registry.npmjs.org/nan
+409 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+410 verbose request uri https://registry.npmjs.org/bindings
+411 verbose request no auth needed
+412 info attempt registry request try #1 at 18:12:12
+413 verbose etag "BJGP1201ZXLWX88VO1W0N0YSR"
+414 http request GET https://registry.npmjs.org/bindings
+415 verbose request uri https://registry.npmjs.org/nan
+416 verbose request no auth needed
+417 info attempt registry request try #1 at 18:12:12
+418 verbose etag "EI65ZGD4YQM5HZLU2BK7SJIT9"
+419 http request GET https://registry.npmjs.org/nan
+420 http 304 https://registry.npmjs.org/bindings
+421 silly get cb [ 304,
+421 silly get   { date: 'Thu, 26 Feb 2015 18:12:13 GMT',
+421 silly get     server: 'Apache',
+421 silly get     via: '1.1 varnish',
+421 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:13 GMT',
+421 silly get     'cache-control': 'max-age=60',
+421 silly get     etag: '"BJGP1201ZXLWX88VO1W0N0YSR"',
+421 silly get     age: '15',
+421 silly get     'x-served-by': 'cache-iad2122-IAD',
+421 silly get     'x-cache': 'HIT',
+421 silly get     'x-cache-hits': '1',
+421 silly get     'x-timer': 'S1424974333.617720,VS0,VE0',
+421 silly get     vary: 'Accept',
+421 silly get     'content-length': '0',
+421 silly get     'keep-alive': 'timeout=10, max=50',
+421 silly get     connection: 'Keep-Alive' } ]
+422 verbose etag https://registry.npmjs.org/bindings from cache
+423 verbose get saving bindings to /home/pi/.npm/registry.npmjs.org/bindings/.cache.json
+424 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: true }
+425 silly addNameRange versions [ 'bindings',
+425 silly addNameRange   [ '0.0.1',
+425 silly addNameRange     '0.1.0',
+425 silly addNameRange     '0.1.1',
+425 silly addNameRange     '0.2.0',
+425 silly addNameRange     '0.2.1',
+425 silly addNameRange     '0.2.2',
+425 silly addNameRange     '0.2.3',
+425 silly addNameRange     '0.2.4',
+425 silly addNameRange     '0.3.0',
+425 silly addNameRange     '0.4.0',
+425 silly addNameRange     '1.0.0',
+425 silly addNameRange     '1.1.0',
+425 silly addNameRange     '1.1.1',
+425 silly addNameRange     '1.2.0',
+425 silly addNameRange     '1.2.1' ] ]
+426 verbose addNamed bindings@1.2.1
+427 silly addNamed semver.valid 1.2.1
+428 silly addNamed semver.validRange 1.2.1
+429 silly cache afterAdd bindings@1.2.1
+430 verbose afterAdd /home/pi/.npm/bindings/1.2.1/package/package.json not in flight; writing
+431 http 304 https://registry.npmjs.org/nan
+432 silly get cb [ 304,
+432 silly get   { date: 'Thu, 26 Feb 2015 18:12:13 GMT',
+432 silly get     server: 'Apache',
+432 silly get     via: '1.1 varnish',
+432 silly get     'last-modified': 'Thu, 26 Feb 2015 18:12:12 GMT',
+432 silly get     'cache-control': 'max-age=60',
+432 silly get     etag: '"EI65ZGD4YQM5HZLU2BK7SJIT9"',
+432 silly get     age: '57',
+432 silly get     'x-served-by': 'cache-iad2143-IAD',
+432 silly get     'x-cache': 'HIT',
+432 silly get     'x-cache-hits': '2',
+432 silly get     'x-timer': 'S1424974333.769811,VS0,VE0',
+432 silly get     vary: 'Accept',
+432 silly get     'content-length': '0',
+432 silly get     'keep-alive': 'timeout=10, max=50',
+432 silly get     connection: 'Keep-Alive' } ]
+433 verbose etag https://registry.npmjs.org/nan from cache
+434 verbose get saving nan to /home/pi/.npm/registry.npmjs.org/nan/.cache.json
+435 verbose afterAdd /home/pi/.npm/bindings/1.2.1/package/package.json written
+436 silly addNameRange number 2 { name: 'nan', range: '>=1.6.2 <1.7.0', hasData: true }
+437 silly addNameRange versions [ 'nan',
+437 silly addNameRange   [ '0.3.0-wip',
+437 silly addNameRange     '0.3.0-wip2',
+437 silly addNameRange     '0.3.0',
+437 silly addNameRange     '0.3.1',
+437 silly addNameRange     '0.3.2',
+437 silly addNameRange     '0.4.0',
+437 silly addNameRange     '0.4.1',
+437 silly addNameRange     '0.4.2',
+437 silly addNameRange     '0.4.3',
+437 silly addNameRange     '0.4.4',
+437 silly addNameRange     '0.5.0',
+437 silly addNameRange     '0.5.1',
+437 silly addNameRange     '0.5.2',
+437 silly addNameRange     '0.6.0',
+437 silly addNameRange     '0.7.0',
+437 silly addNameRange     '0.7.1',
+437 silly addNameRange     '0.8.0',
+437 silly addNameRange     '1.0.0',
+437 silly addNameRange     '1.1.0',
+437 silly addNameRange     '1.1.1',
+437 silly addNameRange     '1.1.2',
+437 silly addNameRange     '1.2.0',
+437 silly addNameRange     '1.3.0',
+437 silly addNameRange     '1.4.0',
+437 silly addNameRange     '1.4.1',
+437 silly addNameRange     '1.5.0',
+437 silly addNameRange     '1.4.2',
+437 silly addNameRange     '1.4.3',
+437 silly addNameRange     '1.5.1',
+437 silly addNameRange     '1.5.2',
+437 silly addNameRange     '1.6.0',
+437 silly addNameRange     '1.5.3',
+437 silly addNameRange     '1.6.1',
+437 silly addNameRange     '1.6.2' ] ]
+438 verbose addNamed nan@1.6.2
+439 silly addNamed semver.valid 1.6.2
+440 silly addNamed semver.validRange 1.6.2
+441 silly cache afterAdd nan@1.6.2
+442 verbose afterAdd /home/pi/.npm/nan/1.6.2/package/package.json not in flight; writing
+443 verbose afterAdd /home/pi/.npm/nan/1.6.2/package/package.json written
+444 silly install resolved [ { name: 'bindings',
+444 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+444 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+444 silly install resolved     version: '1.2.1',
+444 silly install resolved     author:
+444 silly install resolved      { name: 'Nathan Rajlich',
+444 silly install resolved        email: 'nathan@tootallnate.net',
+444 silly install resolved        url: 'http://tootallnate.net' },
+444 silly install resolved     repository:
+444 silly install resolved      { type: 'git',
+444 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+444 silly install resolved     main: './bindings.js',
+444 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+444 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+444 silly install resolved     license: 'MIT',
+444 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+444 silly install resolved     _id: 'bindings@1.2.1',
+444 silly install resolved     scripts: {},
+444 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+444 silly install resolved     _from: 'bindings@>=1.2.1 <1.3.0',
+444 silly install resolved     _npmVersion: '1.4.14',
+444 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+444 silly install resolved     maintainers: [ [Object], [Object] ],
+444 silly install resolved     dist:
+444 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+444 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+444 silly install resolved     directories: {},
+444 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+444 silly install resolved     readme: 'ERROR: No README data found!' },
+444 silly install resolved   { name: 'nan',
+444 silly install resolved     version: '1.6.2',
+444 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+444 silly install resolved     main: 'include_dirs.js',
+444 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+444 silly install resolved     scripts:
+444 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+444 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+444 silly install resolved     contributors:
+444 silly install resolved      [ [Object],
+444 silly install resolved        [Object],
+444 silly install resolved        [Object],
+444 silly install resolved        [Object],
+444 silly install resolved        [Object],
+444 silly install resolved        [Object],
+444 silly install resolved        [Object] ],
+444 silly install resolved     devDependencies:
+444 silly install resolved      { bindings: '~1.2.1',
+444 silly install resolved        'node-gyp': '~1.0.2',
+444 silly install resolved        pangyp: '~2.0.1',
+444 silly install resolved        tap: '~0.5.0',
+444 silly install resolved        xtend: '~4.0.0' },
+444 silly install resolved     license: 'MIT',
+444 silly install resolved     gitHead: 'ab0e5eed8d4aa36111bf8f44cf75644ece327e98',
+444 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+444 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+444 silly install resolved     _id: 'nan@1.6.2',
+444 silly install resolved     _shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+444 silly install resolved     _from: 'nan@>=1.6.2 <1.7.0',
+444 silly install resolved     _npmVersion: '2.0.0',
+444 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+444 silly install resolved     maintainers: [ [Object], [Object] ],
+444 silly install resolved     dist:
+444 silly install resolved      { shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+444 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.6.2.tgz' },
+444 silly install resolved     directories: {},
+444 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.6.2.tgz',
+444 silly install resolved     readme: 'ERROR: No README data found!' } ]
+445 info install bindings@1.2.1 into /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+446 info install nan@1.6.2 into /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+447 info installOne bindings@1.2.1
+448 verbose installOne of bindings to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll not in flight; installing
+449 info installOne nan@1.6.2
+450 verbose installOne of nan to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll not in flight; installing
+451 verbose lock using /home/pi/.npm/_locks/bindings-5f6dfc3a096ece3a.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+452 verbose lock using /home/pi/.npm/_locks/nan-72528de2d580efe0.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+453 silly install write writing bindings 1.2.1 to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+454 silly cache addNamed cb bindings@1.2.1
+455 verbose unbuild node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+456 silly install write writing nan 1.6.2 to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+457 silly cache addNamed cb nan@1.6.2
+458 verbose unbuild node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+459 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+460 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+461 verbose tar unpack /home/pi/.npm/bindings/1.2.1/package.tgz
+462 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+463 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+464 verbose tar unpack /home/pi/.npm/nan/1.6.2/package.tgz
+465 verbose tar unpacking to /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+466 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+467 silly gunzTarPerm modes [ '755', '644' ]
+468 silly gunzTarPerm modes [ '755', '644' ]
+469 silly gunzTarPerm extractEntry package.json
+470 silly gunzTarPerm extractEntry package.json
+471 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+472 silly gunzTarPerm extractEntry README.md
+473 silly gunzTarPerm extractEntry bindings.js
+474 silly gunzTarPerm extractEntry include_dirs.js
+475 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+476 silly gunzTarPerm extractEntry LICENSE.md
+477 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+478 silly gunzTarPerm extractEntry .dntrc
+479 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+480 silly gunzTarPerm extractEntry appveyor.yml
+481 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+482 silly gunzTarPerm extractEntry nan.h
+483 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+484 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+485 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+486 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+487 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+488 silly gunzTarPerm extractEntry nan_new.h
+489 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+490 silly gunzTarPerm extractEntry nan_string_bytes.h
+491 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+492 silly gunzTarPerm extractEntry CHANGELOG.md
+493 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+494 info preinstall bindings@1.2.1
+495 silly install resolved []
+496 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+497 info build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+498 verbose linkStuff [ false,
+498 verbose linkStuff   false,
+498 verbose linkStuff   false,
+498 verbose linkStuff   '/home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules' ]
+499 info linkStuff bindings@1.2.1
+500 verbose linkBins bindings@1.2.1
+501 verbose linkMans bindings@1.2.1
+502 verbose rebuildBundles bindings@1.2.1
+503 info install bindings@1.2.1
+504 info postinstall bindings@1.2.1
+505 verbose unlock done using /home/pi/.npm/_locks/bindings-5f6dfc3a096ece3a.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/bindings
+506 info preinstall nan@1.6.2
+507 silly install resolved []
+508 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+509 info build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+510 verbose linkStuff [ false,
+510 verbose linkStuff   false,
+510 verbose linkStuff   false,
+510 verbose linkStuff   '/home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules' ]
+511 info linkStuff nan@1.6.2
+512 verbose linkBins nan@1.6.2
+513 verbose linkMans nan@1.6.2
+514 verbose rebuildBundles nan@1.6.2
+515 info install nan@1.6.2
+516 info postinstall nan@1.6.2
+517 verbose unlock done using /home/pi/.npm/_locks/nan-72528de2d580efe0.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll/node_modules/nan
+518 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+519 info build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+520 verbose linkStuff [ false,
+520 verbose linkStuff   false,
+520 verbose linkStuff   false,
+520 verbose linkStuff   '/home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules' ]
+521 info linkStuff epoll@0.1.12
+522 verbose linkBins epoll@0.1.12
+523 verbose linkMans epoll@0.1.12
+524 verbose rebuildBundles epoll@0.1.12
+525 verbose rebuildBundles [ 'bindings', 'nan' ]
+526 info install epoll@0.1.12
+527 info pi-spi@0.8.7 Failed to exec install script
+528 verbose unsafe-perm in lifecycle true
+529 verbose unlock done using /home/pi/.npm/_locks/pi-spi-6dc5311cdfa95b73.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+530 info postinstall epoll@0.1.12
+531 verbose unlock done using /home/pi/.npm/_locks/epoll-2f30bdc81a429eea.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins/node_modules/epoll
+532 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+533 info build /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+534 verbose linkStuff [ false,
+534 verbose linkStuff   false,
+534 verbose linkStuff   false,
+534 verbose linkStuff   '/home/pi/apps/PruebaRF24/node_modules/nrf/node_modules' ]
+535 info linkStuff pi-pins@1.0.2
+536 verbose linkBins pi-pins@1.0.2
+537 verbose linkMans pi-pins@1.0.2
+538 verbose rebuildBundles pi-pins@1.0.2
+539 verbose rebuildBundles [ 'epoll' ]
+540 info install pi-pins@1.0.2
+541 info postinstall pi-pins@1.0.2
+542 verbose unlock done using /home/pi/.npm/_locks/pi-pins-ab1c79b541182627.lock for /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-pins
+543 verbose about to build /home/pi/apps/PruebaRF24/node_modules/nrf
+544 verbose unlock done using /home/pi/.npm/_locks/nrf-1f10782e24be5cd7.lock for /home/pi/apps/PruebaRF24/node_modules/nrf
+545 verbose stack Error: pi-spi@0.8.7 install: `node-gyp rebuild`
+545 verbose stack Exit status 1
+545 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+545 verbose stack     at EventEmitter.emit (events.js:110:17)
+545 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+545 verbose stack     at ChildProcess.emit (events.js:110:17)
+545 verbose stack     at maybeClose (child_process.js:1008:16)
+545 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+546 verbose pkgid pi-spi@0.8.7
+547 verbose cwd /home/pi/apps/PruebaRF24
+548 error Linux 3.12.35+
+549 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "instal" "nrf"
+550 error node v0.12.0
+551 error npm  v2.5.1
+552 error code ELIFECYCLE
+553 error pi-spi@0.8.7 install: `node-gyp rebuild`
+553 error Exit status 1
+554 error Failed at the pi-spi@0.8.7 install script 'node-gyp rebuild'.
+554 error This is most likely a problem with the pi-spi package,
+554 error not with npm itself.
+554 error Tell the author that this fails on your system:
+554 error     node-gyp rebuild
+554 error You can get their info via:
+554 error     npm owner ls pi-spi
+554 error There is likely additional logging output above.
+555 verbose exit [ 1, true ]
+556 verbose unbuild node_modules/nrf/node_modules/pi-spi
+557 info preuninstall pi-spi@0.8.7
+558 info uninstall pi-spi@0.8.7
+559 verbose unbuild rmStuff pi-spi@0.8.7 from /home/pi/apps/PruebaRF24/node_modules
+560 verbose unbuild rmStuff in /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules
+561 info postuninstall pi-spi@0.8.7
+562 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+563 silly gentlyRm purging /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules/pi-spi
+564 silly gentlyRm quitting because other entries in /home/pi/apps/PruebaRF24/node_modules/nrf/node_modules
+565 verbose unbuild node_modules/nrf
+566 info preuninstall nrf@0.8.2
+567 info uninstall nrf@0.8.2
+568 verbose unbuild rmStuff nrf@0.8.2 from /home/pi/apps/PruebaRF24/node_modules
+569 info postuninstall nrf@0.8.2
+570 verbose gentlyRm vacuuming /home/pi/apps/PruebaRF24/node_modules/nrf
+571 silly gentlyRm purging /home/pi/apps/PruebaRF24/node_modules/nrf
+572 silly gentlyRm removing /home/pi/apps/PruebaRF24/node_modules
+573 silly gentlyRm finished vacuuming up to /home/pi/apps/PruebaRF24
