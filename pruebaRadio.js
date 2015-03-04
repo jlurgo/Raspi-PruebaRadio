@@ -11,6 +11,7 @@ radio.autoRetransmit({
 // Start the radio
 radio.begin(function() {
 	//radio.printDetails();
+	var rx = radio.openPipe('rx', 0xF0F0F0F0E1); // Listen at address 
 	var tx = radio.openPipe('tx', 0xe8e8f0f0e1); // Send to address
  
 	// Fires when our transmission pipe is ready
@@ -24,22 +25,22 @@ radio.begin(function() {
 	});
  
 //	// Fires when our reception pipe is ready
-//	rx.on('ready', function() {
-//		console.log("RX Ready");
-//		radio.printDetails();
-//	});
-// 
-//	// Fires when our reception pipe recieves data
-//	rx.on('data', function(d) {
-//		console.log("Recieved:", d.toString('utf8')); // Decode the data and print 
-//		tx.write(d); // Send back the same data we just got
-//	});
-// 
+	rx.on('ready', function() {
+		console.log("RX Ready");
+		radio.printDetails();
+	});
+ 
+	// Fires when our reception pipe recieves data
+	rx.on('data', function(d) {
+		console.log("Recieved:", d.toString('utf8')); // Decode the data and print 
+		tx.write(d); // Send back the same data we just got
+	});
+ 
 	// Handler for errors
 	tx.on('error', function(e) {
 		console.log("Error:", e);
 	});
-//	rx.on('error', function(e) {
-//		console.log("Error:", e);
-//	});
+	rx.on('error', function(e) {
+		console.log("Error:", e);
+	});
 });
