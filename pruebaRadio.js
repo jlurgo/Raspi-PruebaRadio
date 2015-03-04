@@ -18,9 +18,9 @@ radio.begin(function() {
 		console.log("TX Ready");
 		radio.printDetails();
 		tx.write("A"); // Send a quick "I'm here" message
-		setInterval(function(){
-			tx.write("1");
-		}, 1000);
+//		setInterval(function(){
+//			tx.write("1");
+//		}, 1000);
 	});
  
 //	// Fires when our reception pipe is ready
