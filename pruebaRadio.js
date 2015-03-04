@@ -2,11 +2,11 @@ var radio = require('nrf').connect("/dev/spidev0.0", 25);
 
 radio.channel(0x4c); // Set channel to 76
 radio.dataRate('1Mbps') // Set data rate to 1Mbps
-//radio.crcBytes(2) // Set the CRC to 2
-//radio.autoRetransmit({
-//	count: 15,
-//	delay: 4000
-//}); // Auto retransmit up to 15 times
+radio.crcBytes(2) // Set the CRC to 2
+radio.autoRetransmit({
+	count: 15,
+	delay: 4000
+}); // Auto retransmit up to 15 times
 // 
 // Start the radio
 radio.begin(function() {
