@@ -39,7 +39,7 @@ radio.begin(function() {
 	tx.on('error', function(e) {
 		console.log("Error:", e);
 	});
-	rx.on('error', function(e) {
-		console.log("Error:", e);
-	});
+//	rx.on('error', function(e) {
+//		console.log("Error:", e);
+//	});
 });
