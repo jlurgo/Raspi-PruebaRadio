@@ -10,7 +10,7 @@ radio.dataRate('1Mbps') // Set data rate to 1Mbps
 // 
 // Start the radio
 radio.begin(function() {
-	radio.printDetails();
+	//radio.printDetails();
 	var tx = radio.openPipe('tx', 0xe8e8f0f0e1); // Send to address
  
 	// Fires when our transmission pipe is ready
