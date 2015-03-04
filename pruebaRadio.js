@@ -20,7 +20,7 @@ radio.begin(function() {
 		tx.write("A"); // Send a quick "I'm here" message
 		setInterval(function(){
 			tx.write("1");
-		});
+		}, 1000);
 	});
  
 //	// Fires when our reception pipe is ready
