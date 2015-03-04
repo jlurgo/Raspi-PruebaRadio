@@ -11,8 +11,8 @@ radio.autoRetransmit({
 // Start the radio
 radio.begin(function() {
 	//radio.printDetails();
-	var rx = radio.openPipe('rx', 0xF0F0F0F0E1); // Listen at address 
-	var tx = radio.openPipe('tx', 0xF5F0F0F0F2); // Send to address
+	var rx = radio.openPipe('rx', 0xF0F0F0F0D2); // Listen at address 
+	var tx = radio.openPipe('tx', 0xF0F0F0F0E1); // Send to address
  
 	// Fires when our transmission pipe is ready
 	tx.on('ready', function() {
