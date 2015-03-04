@@ -17,7 +17,6 @@ radio.begin(function() {
 	// Fires when our transmission pipe is ready
 	tx.on('ready', function() {
 		console.log("TX Ready");
-		radio.printDetails();
 		tx.write("A"); // Send a quick "I'm here" message
 //		setInterval(function(){
 //			tx.write("1");
